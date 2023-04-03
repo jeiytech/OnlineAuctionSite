@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2249F64F-1559-4F91-AD01-0F327EBBC894}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineArtGallery</RootNamespace>
+    <AssemblyName>OnlineArtGallery</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44322</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AjaxCancelOrderController.cs" />
+    <Compile Include="Controllers\AjaxDeliverItemController.cs" />
+    <Compile Include="Controllers\AjaxGetPaymentInfoController.cs" />
+    <Compile Include="Controllers\AjaxOrderItemController.cs" />
+    <Compile Include="Controllers\AjaxOrderItemController.cs" />
+    <Compile Include="Controllers\AjaxOrderItemController.cs" />
+    <Compile Include="Controllers\AjaxOrderItemController.cs" />
+    <Compile Include="Controllers\AjaxRemoveItemController.cs" />
+    <Compile Include="Controllers\AjaxRemoveItemController.cs" />
+    <Compile Include="Controllers\AjaxRemoveItemController.cs" />
+    <Compile Include="Controllers\AjaxRemoveItemController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\EditItemController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ItemController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Controllers\MyItemsController.cs" />
+    <Compile Include="Controllers\MyOrdersController.cs" />
+    <Compile Include="Controllers\MyProfileController.cs" />
+    <Compile Include="Controllers\PostItemController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\RequestController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\MessageCenter.cs" />
+    <Compile Include="Models\OnlineArtGallery.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\request.cs" />
+    <Compile Include="Models\request2.cs" />
+    <Compile Include="Models\SQLCon.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\user1.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\OnlineArtGallery.dll" />
+    <Content Include="bin\OnlineArtGallery.pdb" />
+    <Content Include="Content\bootstrap-dialog.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\cs1.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.css" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.min.css" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.standalone.css" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.css" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Content\Plugins\DatePicker\Js\bootstrap-datepicker.js" />
+    <Content Include="Content\Plugins\DatePicker\Js\bootstrap-datepicker.min.js" />
+    <Content Include="Content\Plugins\DatePicker\StyleSheet1.css" />
+    <Content Include="Content\Style.css" />
+    <Content Include="Content\Uploads\06a5cab5-914a-4222-9d6a-36c65e113100.jpg" />
+    <Content Include="Content\Uploads\0a7f5a1c-7498-4ce7-9908-76d47563b46e.jpg" />
+    <Content Include="Content\Uploads\1a819e4f-5bb2-490b-a4b1-e600d720462a.jpg" />
+    <Content Include="Content\Uploads\21f1d86c-229d-465e-9123-3d01f84166f3.jpg" />
+    <Content Include="Content\Uploads\257d59f4-aff0-4110-b92c-6adea8c912f3.jpg" />
+    <Content Include="Content\Uploads\2be67ddb-0f8e-4944-a662-57c50689847e.jpg" />
+    <Content Include="Content\Uploads\44345a8b-c855-4abe-954b-ff9b47045771.jpg" />
+    <Content Include="Content\Uploads\46bc3b8f-6d35-4b1e-ab83-04e1d6477a42.jpg" />
+    <Content Include="Content\Uploads\5061d9de-a959-4417-a2cc-4882ed5bb2dd.jpg" />
+    <Content Include="Content\Uploads\5270f5fe-baf2-4f3f-876d-5e4d2fccb232.jpg" />
+    <Content Include="Content\Uploads\55804026-c290-4d6b-879b-6150bb431567.jpg" />
+    <Content Include="Content\Uploads\795cfa85-7908-4ca3-8468-4865b07fd7a5.jpg" />
+    <Content Include="Content\Uploads\89e92cc1-936d-49f1-aad0-90af90540985.jpg" />
+    <Content Include="Content\Uploads\8d0e989a-570e-4462-ade4-9337de96ce86.jpg" />
+    <Content Include="Content\Uploads\982555ac-c712-4b4e-88ef-f94858bbf5c9.jpg" />
+    <Content Include="Content\Uploads\9a39e26f-c3e8-4e90-a4e1-ce0ad6032a46.jpg" />
+    <Content Include="Content\Uploads\a896c9e9-dd09-44cf-a8a2-5231fc66fc87.jpg" />
+    <Content Include="Content\Uploads\c18c6122-0837-445b-bdaa-09ebc0decd7f.jpg" />
+    <Content Include="Content\Uploads\c706e5d9-db35-40c5-a3b1-b23c6f446c48.jpg" />
+    <Content Include="Content\Uploads\e2b04104-bb3a-4646-a557-4713ea3e495d.jpg" />
+    <Content Include="Content\Uploads\ebc2a17a-82c3-414a-9308-3e1ee8686f79.jpg" />
+    <Content Include="Content\Uploads\f4b80c58-d007-4037-8b03-7261ef67137c.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap-dialog.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.css.map" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.min.css.map" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker.standalone.min.css.map" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.css.map" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.min.css.map" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="Content\Plugins\DatePicker\Css\bootstrap-datepicker3.standalone.min.css.map" />
+    <Content Include="Content\Uploads\Thumbs.db" />
+    <Content Include="Scripts\Global\CommonScript.js" />
+    <Content Include="Scripts\Global\CommonScript.js" />
+    <Content Include="Scripts\Item\ItemScript.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="README.md" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\EditItem\EditItemScript.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Login\LoginScript.js" />
+    <Content Include="Scripts\Messages\Messages.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\MyItems\MyItemsScript.js" />
+    <Content Include="Scripts\MyOrders\MyOrdersScript.js" />
+    <Content Include="Scripts\MyProfile\MyProfileScript.js" />
+    <Content Include="Scripts\PostItem\PostItemScript.js" />
+    <Content Include="Scripts\Register\RegisterScript.js" />
+    <Content Include="Scripts\request.js" />
+    <Content Include="Scripts\user.js" />
+    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\AboutUs\Index.cshtml" />
+    <Content Include="Views\EditItem\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Messages\Index.cshtml" />
+    <Content Include="Views\MyItems\Index.cshtml" />
+    <Content Include="Views\MyOrders\Index.cshtml" />
+    <Content Include="Views\MyProfile\Index.cshtml" />
+    <Content Include="Views\Register\EmailExists.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
+    <Content Include="Views\Register\Success.cshtml" />
+    <Content Include="Views\PostItem\Error.cshtml" />
+    <Content Include="Views\PostItem\Index.cshtml" />
+    <Content Include="Views\Request\index.cshtml" />
+    <Content Include="Views\Request\Success.cshtml" />
+    <Content Include="Views\Admin\Manage.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Item\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49945</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44322/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

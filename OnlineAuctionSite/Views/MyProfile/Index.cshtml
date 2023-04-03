@@ -1,0 +1,115 @@
+﻿
+@{ ViewBag.Title = "My profile";
+                OnlineAuctionSite.Models.User user = (OnlineAuctionSite.Models.User)Session["loggedUser"]; }
+
+<ol class="breadcrumb">
+    <li><a href="@Url.Action("Index","Home")">Home</a></li>
+    <li class="active">My profile</li>
+</ol>
+
+
+<div class="container">
+
+    <form action="" method="post" onsubmit="return ValidateForm();">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-label">First name</div>
+                    <input type="text" class="fullwidth form-control" id="jfirstname" name="firstname" value="@user.firstName" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-label">Last name</div>
+                    <input type="text" class="fullwidth form-control" id="jlastname" name="lastname" value="@user.lastName" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-label">Email address</div>
+                    <div class="form-control">@user.email</div>
+                </div>
+            </div>
+            <!--Radio Button-->
+            <div class="row">
+                <div class="form-check form-check-inline">
+                    <div class="col-lg-6">
+                        <div class="form-label">Gender</div>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-check-label"><b>Age</b></div>
+                    <input type="number" name="age" id="age" value="@user.age" />
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-label">Login password</div>
+                    <input type="password" class="fullwidth form-control" id="jpassword" name="password" value="@user.password" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-label">Confirm login password</div>
+                    <input type="password" class="fullwidth form-control" id="jpassword2" name="password2" value="@user.password" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-label">Shipping address</div>
+                    <textarea class="fullwidth form-control" id="jaddress" name="address" style="height:100px;">@user.address</textarea>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-label">Your Interest Paintings</div>
+                    <textarea class="fullwidth form-control" id="interest" name="interest" style="height:100px;">@user.interest</textarea>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-label">Bank Account </div>
+                    <textarea class="fullwidth form-control" id="bank" name="bank" style="height:100px;">@user.bank</textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pad-6"></div>
+                    <label><input type="checkbox" id="jacceptterms" /> I accept OnlineAuctionSite Terms &amp; Conditions.</label>
+                    <div class="pad-6"></div>
+                    <div class="alert alert-danger" style="display:none;" id="jregisteralert"></div>
+                    <div class="pad-6"></div>
+                    <input class="btn btn-primary btn-lg" type="submit" name="editRequest" value="Edit Profile" />
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </form>
+
+
+
+
+
+    <div class="col-lg-6">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Terms &amp; Conditions</h3>
+                <div class="box">
+                    
+                    <hr />
+                    <a href="@Url.Action("Index","AboutUs")"><span class="glyphicon glyphicon-user"></span> About us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="~/Scripts/MyProfile/MyProfileScript.js"></script>
+

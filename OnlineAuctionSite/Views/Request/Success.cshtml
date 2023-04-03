@@ -1,0 +1,20 @@
+﻿
+@{ ViewBag.Title = "Success"; }
+
+<ol class="breadcrumb">
+    <li><a href="@Url.Action("Index","Home")">Home</a></li>
+    <li><a href="@Url.Action("Index","Request")">Request</a></li>
+    <li class="active">Success</li>
+</ol>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Request sent successful</h3>
+            <div class="box">
+                <p>Your Request Has Been Sent Succesfully. Admin Will Get Back To You.</p>
+            </div>
+            <div class="btn btn-primary" onclick="window.location = '@Url.Action("Index","Home")';">Go Back</div>
+        </div>
+    </div>
+</div>

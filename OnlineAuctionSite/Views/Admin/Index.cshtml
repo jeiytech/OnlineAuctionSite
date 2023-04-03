@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "User Request";
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<link href="/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/cs1.css" rel="stylesheet" />
+<script src="~/Scripts/request.js"></script>
+<body onload="loadData()">
+
+    <div class="container">
+        <h2>Manage User</h2>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        User Id
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+</body>
